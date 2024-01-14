@@ -1,8 +1,13 @@
 #!/usr/bin/env python3
-
+from flask import Flask
 from CLI_Bot import Bot
-bot = Bot()
-run = bot.run()
+
+app = Flask(__name__)
+
+@app.route('/')
+def helper():
+    bot = Bot()
+    run = bot.run()
 
 if __name__ == "__main__":
-    run()
+    app.run(debug=False, host='0.0.0.0')

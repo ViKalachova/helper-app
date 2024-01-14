@@ -11,6 +11,7 @@ datetime = "^5.4"
 pathlib = "^1.0.1"
 prompt-toolkit = "^3.0.43"
 rich = "^13.7.0"
+flask = "^3.0.0"
 
 
 [build-system]
